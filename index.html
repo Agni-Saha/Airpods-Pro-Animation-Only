@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Scrolling Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+</head>
+
+<body>
+
+    <div class="loading" id="loader">
+        <img class="loading-image" src="./Apple-logo.png" alt="">
+        <div class="loading-text">
+            <span class="loading-text-words">L</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">I</span>
+            <span class="loading-text-words">N</span>
+            <span class="loading-text-words">G</span>
+        </div>
+    </div>
+
+    <canvas class="airpods_scroll"></canvas>
+
+    <div class="text_container">
+        <h1>AirPods Pro</h1>
+        <p>Watch the film</p>
+    </div>
+
+    <script>
+        document.querySelector("body").style.visibility = "hidden"
+        document.querySelector("#loader").style.visibility = "visible"
+        document.body.style.overflow = "hidden";
+
+        const wait = (delay = 0) =>
+            new Promise(resolve => setTimeout(resolve, delay));
+
+        document.addEventListener('DOMContentLoaded', () =>
+            wait(5000).then(() => {
+                document.querySelector("body").style.visibility = "visible"
+                document.querySelector("#loader").style.visibility = "hidden"
+                document.body.style.overflow = "visible";
+            }));
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
