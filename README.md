@@ -1,7 +1,7 @@
 # Airpods-Pro-Animation-Only
 
 This consists of the airpods pro scrolling video animation and \
-the loading animation I used in my Apple Airpods Pro website. \
+the loading animation I used in my Apple Airpods Pro website.
 
 ## Airpods Pro Scrolling Video animation
 
